@@ -4,7 +4,7 @@ Method code, prompts and data samples for **Distilling Metacognitive Behaviors t
 Agentic Editing** (anonymous submission). MBT adds metacognitive behaviors to teacher
 reasoning traces for subsequent supervised fine-tuning.
 
-[Quickstart](#-quickstart) | [Methods](#methods) | [Data](#-data) |
+[Quickstart](#-quickstart) | [Methods](#methods) | [Data](#-data) | [Models](#-models) |
 [Results](#-results-from-the-paper) | [Usage guide](docs/usage.md) | [Citation](#-citation)
 
 ## 🚀 Quickstart
@@ -68,6 +68,17 @@ The separate data package includes the dataset card, field descriptions, attribu
 and JSONL files. The dataset is on Hugging Face at
 [`metacognitive-behavioral-tuning/mbt-traces`](https://huggingface.co/datasets/metacognitive-behavioral-tuning/mbt-traces).
 The included examples can be used without downloading it.
+
+## 🤗 Models
+
+Qwen3.5-4B-Base fine-tuned on each condition, in bf16:
+
+| Condition | Model |
+|---|---|
+| Unedited SFT | [`metacognitive-behavioral-tuning/Qwen3.5-4B-Unedited-SFT`](https://huggingface.co/metacognitive-behavioral-tuning/Qwen3.5-4B-Unedited-SFT) |
+| MBT-R | [`metacognitive-behavioral-tuning/Qwen3.5-4B-MBT-R`](https://huggingface.co/metacognitive-behavioral-tuning/Qwen3.5-4B-MBT-R) |
+| MBT-I | [`metacognitive-behavioral-tuning/Qwen3.5-4B-MBT-I`](https://huggingface.co/metacognitive-behavioral-tuning/Qwen3.5-4B-MBT-I) |
+| MBT-A | [`metacognitive-behavioral-tuning/Qwen3.5-4B-MBT-A`](https://huggingface.co/metacognitive-behavioral-tuning/Qwen3.5-4B-MBT-A) |
 
 ## 📊 Results (from the paper)
 
