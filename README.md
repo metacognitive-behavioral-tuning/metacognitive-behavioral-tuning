@@ -54,7 +54,7 @@ Training and evaluation code are excluded.
 
 The data package contains 1,000 Nemotron-Math-v2 problems, one trace per problem for
 Unedited, MBT-R, MBT-I and MBT-A, and one SFT config per condition. Failed MBT-R edits remain in the
-trace file with their status; only successful edits enter its SFT split.
+trace file with their status; only successful edits enter its SFT config.
 
 | Condition | Trace rows | SFT rows | SFT tokens (paper Table D1) |
 |---|---:|---:|---:|
